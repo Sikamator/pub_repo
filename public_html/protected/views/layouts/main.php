@@ -65,6 +65,12 @@
                         'visible' => Yii::app()->user->isGuest,
                         'htmlOptions' => array('id' => "top_login_button")
                     ),
+                    array(
+                        'label' => 'Выход',
+                        'url' => array('/user/logout'),
+                        'visible' => Yii::app()->user->checkAccess('rights'),
+                        'htmlOptions' => array('id' => "top_login_button")
+                    ),
                 ),
             ),
         ),

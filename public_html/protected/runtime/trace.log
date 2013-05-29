@@ -208,3 +208,32 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2013/05/30 00:26:00 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "RWebUser.isUser".' in Z:\home\site.loc\yii\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\site.loc\yii\web\auth\CWebUser.php(140): CComponent->__get('isUser')
+#1 Z:\home\site.loc\public_html\protected\views\layouts\main.php(71): CWebUser->__get('isUser')
+#2 Z:\home\site.loc\yii\web\CBaseController.php(126): require('Z:\home\site.lo...')
+#3 Z:\home\site.loc\public_html\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(43): CBaseController->renderInternal('Z:\home\site.lo...', Array, true)
+#4 Z:\home\site.loc\yii\web\CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(DefaultController), 'Z:\home\site.lo...', Array, true)
+#5 Z:\home\site.loc\yii\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('Z:\home\site.lo...', Array, true)
+#6 Z:\home\site.loc\yii\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#7 Z:\home\site.loc\yii\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#8 Z:\home\site.loc\yii\web\CBaseController.php(206): COutputProcessor->run()
+#9 Z:\home\site.loc\yii\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#10 Z:\home\site.loc\public_html\protected\views\layouts\column2.php(22): CBaseController->endContent()
+#11 Z:\home\site.loc\yii\web\CBaseController.php(126): require('Z:\home\site.lo...')
+#12 Z:\home\site.loc\public_html\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(43): CBaseController->renderInternal('Z:\home\site.lo...', Array, true)
+#13 Z:\home\site.loc\yii\web\CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(DefaultController), 'Z:\home\site.lo...', Array, true)
+#14 Z:\home\site.loc\yii\web\CController.php(784): CBaseController->renderFile('Z:\home\site.lo...', Array, true)
+#15 Z:\home\site.loc\public_html\protected\modules\user\controllers\DefaultController.php(22): CController->render('/user/index', Array)
+#16 Z:\home\site.loc\yii\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#17 Z:\home\site.loc\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 Z:\home\site.loc\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 Z:\home\site.loc\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 Z:\home\site.loc\yii\web\CWebApplication.php(282): CController->run('')
+#21 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('user')
+#22 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#23 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/user
+---
