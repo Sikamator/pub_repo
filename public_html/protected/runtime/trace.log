@@ -1,0 +1,202 @@
+2013/05/29 15:54:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection.connectionString cannot be empty.' in Z:\home\site.loc\yii\db\CDbConnection.php:369
+Stack trace:
+#0 Z:\home\site.loc\yii\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\site.loc\yii\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 Z:\home\site.loc\yii\base\CModule.php(387): CDbConnection->init()
+#3 Z:\home\site.loc\yii\web\auth\CDbAuthManager.php(589): CModule->getComponent('db')
+#4 Z:\home\site.loc\yii\web\auth\CDbAuthManager.php(59): CDbAuthManager->getDbConnection()
+#5 Z:\home\site.loc\yii\base\CModule.php(387): CDbAuthManager->init()
+#6 Z:\home\site.loc\yii\web\CWebApplication.php(185): CModule->getComponent('authManager')
+#7 Z:\home\site.loc\yii\web\auth\CWebUser.php(806): CWebApplication->getAuthManager()
+#8 Z:\home\site.loc\public_html\protected\modules\rights\components\RWebUser.php(43): CWebUser->checkAccess('user', Array, true)
+#9 Z:\home\site.loc\public_html\protected\views\layouts\main.php(48): RWebUser->checkAccess('user')
+#10 Z:\home\site.loc\yii\web\CBaseController.php(126): require('Z:\home\site.lo...')
+#11 Z:\home\site.loc\public_html\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(43): CBaseController->renderInternal('Z:\home\site.lo...', Array, true)
+#12 Z:\home\site.loc\yii\web\CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(SiteController), 'Z:\home\site.lo...', Array, true)
+#13 Z:\home\site.loc\yii\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('Z:\home\site.lo...', Array, true)
+#14 Z:\home\site.loc\yii\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#15 Z:\home\site.loc\yii\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#16 Z:\home\site.loc\yii\web\CBaseController.php(206): COutputProcessor->run()
+#17 Z:\home\site.loc\yii\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#18 Z:\home\site.loc\public_html\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#19 Z:\home\site.loc\yii\web\CBaseController.php(126): require('Z:\home\site.lo...')
+#20 Z:\home\site.loc\public_html\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(43): CBaseController->renderInternal('Z:\home\site.lo...', Array, true)
+#21 Z:\home\site.loc\yii\web\CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(SiteController), 'Z:\home\site.lo...', Array, true)
+#22 Z:\home\site.loc\yii\web\CController.php(784): CBaseController->renderFile('Z:\home\site.lo...', Array, true)
+#23 Z:\home\site.loc\public_html\protected\controllers\SiteController.php(32): CController->render('index')
+#24 Z:\home\site.loc\yii\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#25 Z:\home\site.loc\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#26 Z:\home\site.loc\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#27 Z:\home\site.loc\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 Z:\home\site.loc\yii\web\CWebApplication.php(282): CController->run('')
+#29 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('')
+#30 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#31 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/index.php
+---
+2013/05/29 15:56:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "admin/cityuser".' in Z:\home\site.loc\yii\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('admin/cityuser')
+#1 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/cityuser
+HTTP_REFERER=http://www.site.loc/
+---
+2013/05/29 15:57:44 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog.authassignment' doesn't exist. Выполнявшийся SQL-запрос: SELECT *
+FROM `AuthAssignment`
+WHERE userid=:userid. Bound with :userid=NULL.
+in Z:\home\site.loc\public_html\protected\modules\rights\components\RWebUser.php (43)
+in Z:\home\site.loc\public_html\protected\views\layouts\main.php (48)
+in Z:\home\site.loc\public_html\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php (43)
+2013/05/29 15:57:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog.authassignment' doesn't exist. The SQL statement executed was: SELECT *
+FROM `AuthAssignment`
+WHERE userid=:userid. Bound with :userid=NULL' in Z:\home\site.loc\yii\db\CDbCommand.php:541
+Stack trace:
+#0 Z:\home\site.loc\yii\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 Z:\home\site.loc\yii\web\auth\CDbAuthManager.php(337): CDbCommand->queryAll()
+#2 Z:\home\site.loc\yii\web\auth\CDbAuthManager.php(74): CDbAuthManager->getAuthAssignments(NULL)
+#3 Z:\home\site.loc\yii\web\auth\CWebUser.php(806): CDbAuthManager->checkAccess('user', NULL, Array)
+#4 Z:\home\site.loc\public_html\protected\modules\rights\components\RWebUser.php(43): CWebUser->checkAccess('user', Array, true)
+#5 Z:\home\site.loc\public_html\protected\views\layouts\main.php(48): RWebUser->checkAccess('user')
+#6 Z:\home\site.loc\yii\web\CBaseController.php(126): require('Z:\home\site.lo...')
+#7 Z:\home\site.loc\public_html\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(43): CBaseController->renderInternal('Z:\home\site.lo...', Array, true)
+#8 Z:\home\site.loc\yii\web\CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(LoginController), 'Z:\home\site.lo...', Array, true)
+#9 Z:\home\site.loc\yii\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('Z:\home\site.lo...', Array, true)
+#10 Z:\home\site.loc\yii\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#11 Z:\home\site.loc\yii\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#12 Z:\home\site.loc\yii\web\CBaseController.php(206): COutputProcessor->run()
+#13 Z:\home\site.loc\yii\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#14 Z:\home\site.loc\public_html\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#15 Z:\home\site.loc\yii\web\CBaseController.php(126): require('Z:\home\site.lo...')
+#16 Z:\home\site.loc\public_html\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(43): CBaseController->renderInternal('Z:\home\site.lo...', Array, true)
+#17 Z:\home\site.loc\yii\web\CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(LoginController), 'Z:\home\site.lo...', Array, true)
+#18 Z:\home\site.loc\yii\web\CController.php(784): CBaseController->renderFile('Z:\home\site.lo...', Array, true)
+#19 Z:\home\site.loc\public_html\protected\modules\user\controllers\LoginController.php(28): CController->render('/user/login', Array)
+#20 Z:\home\site.loc\yii\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#21 Z:\home\site.loc\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#22 Z:\home\site.loc\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#23 Z:\home\site.loc\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 Z:\home\site.loc\yii\web\CWebApplication.php(282): CController->run('')
+#25 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#26 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#27 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/user/login
+---
+2013/05/29 15:57:51 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog.authassignment' doesn't exist. Выполнявшийся SQL-запрос: SELECT *
+FROM `AuthAssignment`
+WHERE userid=:userid. Bound with :userid=NULL.
+in Z:\home\site.loc\public_html\protected\modules\rights\components\RWebUser.php (43)
+in Z:\home\site.loc\public_html\protected\views\layouts\main.php (48)
+in Z:\home\site.loc\public_html\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php (43)
+2013/05/29 15:57:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog.authassignment' doesn't exist. The SQL statement executed was: SELECT *
+FROM `AuthAssignment`
+WHERE userid=:userid. Bound with :userid=NULL' in Z:\home\site.loc\yii\db\CDbCommand.php:541
+Stack trace:
+#0 Z:\home\site.loc\yii\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 Z:\home\site.loc\yii\web\auth\CDbAuthManager.php(337): CDbCommand->queryAll()
+#2 Z:\home\site.loc\yii\web\auth\CDbAuthManager.php(74): CDbAuthManager->getAuthAssignments(NULL)
+#3 Z:\home\site.loc\yii\web\auth\CWebUser.php(806): CDbAuthManager->checkAccess('user', NULL, Array)
+#4 Z:\home\site.loc\public_html\protected\modules\rights\components\RWebUser.php(43): CWebUser->checkAccess('user', Array, true)
+#5 Z:\home\site.loc\public_html\protected\views\layouts\main.php(48): RWebUser->checkAccess('user')
+#6 Z:\home\site.loc\yii\web\CBaseController.php(126): require('Z:\home\site.lo...')
+#7 Z:\home\site.loc\public_html\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(43): CBaseController->renderInternal('Z:\home\site.lo...', Array, true)
+#8 Z:\home\site.loc\yii\web\CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(SiteController), 'Z:\home\site.lo...', Array, true)
+#9 Z:\home\site.loc\yii\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('Z:\home\site.lo...', Array, true)
+#10 Z:\home\site.loc\yii\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#11 Z:\home\site.loc\yii\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#12 Z:\home\site.loc\yii\web\CBaseController.php(206): COutputProcessor->run()
+#13 Z:\home\site.loc\yii\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#14 Z:\home\site.loc\public_html\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#15 Z:\home\site.loc\yii\web\CBaseController.php(126): require('Z:\home\site.lo...')
+#16 Z:\home\site.loc\public_html\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(43): CBaseController->renderInternal('Z:\home\site.lo...', Array, true)
+#17 Z:\home\site.loc\yii\web\CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(SiteController), 'Z:\home\site.lo...', Array, true)
+#18 Z:\home\site.loc\yii\web\CController.php(784): CBaseController->renderFile('Z:\home\site.lo...', Array, true)
+#19 Z:\home\site.loc\public_html\protected\controllers\SiteController.php(32): CController->render('index')
+#20 Z:\home\site.loc\yii\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#21 Z:\home\site.loc\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#22 Z:\home\site.loc\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#23 Z:\home\site.loc\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 Z:\home\site.loc\yii\web\CWebApplication.php(282): CController->run('')
+#25 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('')
+#26 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#27 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/
+---
+2013/05/29 15:57:58 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog.authassignment' doesn't exist. Выполнявшийся SQL-запрос: SELECT *
+FROM `AuthAssignment`
+WHERE userid=:userid. Bound with :userid=NULL.
+in Z:\home\site.loc\public_html\protected\modules\rights\components\RWebUser.php (43)
+in Z:\home\site.loc\public_html\protected\views\layouts\main.php (48)
+in Z:\home\site.loc\public_html\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php (43)
+2013/05/29 15:57:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog.authassignment' doesn't exist. The SQL statement executed was: SELECT *
+FROM `AuthAssignment`
+WHERE userid=:userid. Bound with :userid=NULL' in Z:\home\site.loc\yii\db\CDbCommand.php:541
+Stack trace:
+#0 Z:\home\site.loc\yii\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 Z:\home\site.loc\yii\web\auth\CDbAuthManager.php(337): CDbCommand->queryAll()
+#2 Z:\home\site.loc\yii\web\auth\CDbAuthManager.php(74): CDbAuthManager->getAuthAssignments(NULL)
+#3 Z:\home\site.loc\yii\web\auth\CWebUser.php(806): CDbAuthManager->checkAccess('user', NULL, Array)
+#4 Z:\home\site.loc\public_html\protected\modules\rights\components\RWebUser.php(43): CWebUser->checkAccess('user', Array, true)
+#5 Z:\home\site.loc\public_html\protected\views\layouts\main.php(48): RWebUser->checkAccess('user')
+#6 Z:\home\site.loc\yii\web\CBaseController.php(126): require('Z:\home\site.lo...')
+#7 Z:\home\site.loc\public_html\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(43): CBaseController->renderInternal('Z:\home\site.lo...', Array, true)
+#8 Z:\home\site.loc\yii\web\CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(SiteController), 'Z:\home\site.lo...', Array, true)
+#9 Z:\home\site.loc\yii\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('Z:\home\site.lo...', Array, true)
+#10 Z:\home\site.loc\yii\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#11 Z:\home\site.loc\yii\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#12 Z:\home\site.loc\yii\web\CBaseController.php(206): COutputProcessor->run()
+#13 Z:\home\site.loc\yii\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#14 Z:\home\site.loc\public_html\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#15 Z:\home\site.loc\yii\web\CBaseController.php(126): require('Z:\home\site.lo...')
+#16 Z:\home\site.loc\public_html\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(43): CBaseController->renderInternal('Z:\home\site.lo...', Array, true)
+#17 Z:\home\site.loc\yii\web\CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(SiteController), 'Z:\home\site.lo...', Array, true)
+#18 Z:\home\site.loc\yii\web\CController.php(784): CBaseController->renderFile('Z:\home\site.lo...', Array, true)
+#19 Z:\home\site.loc\public_html\protected\controllers\SiteController.php(32): CController->render('index')
+#20 Z:\home\site.loc\yii\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#21 Z:\home\site.loc\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#22 Z:\home\site.loc\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#23 Z:\home\site.loc\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 Z:\home\site.loc\yii\web\CWebApplication.php(282): CController->run('')
+#25 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('')
+#26 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#27 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/
+---
+2013/05/29 16:11:18 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog.profiles_fields' doesn't exist. Выполнявшийся SQL-запрос: SHOW FULL COLUMNS FROM `profiles_fields`.
+in Z:\home\site.loc\public_html\protected\modules\user\models\ProfileField.php (39)
+in Z:\home\site.loc\public_html\protected\modules\user\models\Profile.php (175)
+in Z:\home\site.loc\public_html\protected\modules\user\views\user\registration.php (58)
+2013/05/29 16:11:18 [error] [exception.CDbException] exception 'CDbException' with message 'Таблица "profiles_fields", упомянутая в записи active record класса "ProfileField", не найдена в базе данных.' in Z:\home\site.loc\yii\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 Z:\home\site.loc\yii\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(ProfileField))
+#1 Z:\home\site.loc\public_html\protected\modules\user\models\ProfileField.php(39): CActiveRecord::model('ProfileField')
+#2 Z:\home\site.loc\public_html\protected\modules\user\models\Profile.php(175): ProfileField::model()
+#3 Z:\home\site.loc\public_html\protected\modules\user\views\user\registration.php(58): Profile->getFields()
+#4 Z:\home\site.loc\yii\web\CBaseController.php(126): require('Z:\home\site.lo...')
+#5 Z:\home\site.loc\public_html\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(43): CBaseController->renderInternal('Z:\home\site.lo...', Array, true)
+#6 Z:\home\site.loc\yii\web\CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(RegistrationController), 'Z:\home\site.lo...', Array, true)
+#7 Z:\home\site.loc\yii\web\CController.php(869): CBaseController->renderFile('Z:\home\site.lo...', Array, true)
+#8 Z:\home\site.loc\yii\web\CController.php(782): CController->renderPartial('/user/registrat...', Array, true)
+#9 Z:\home\site.loc\public_html\protected\modules\user\controllers\RegistrationController.php(77): CController->render('/user/registrat...', Array)
+#10 Z:\home\site.loc\yii\web\actions\CInlineAction.php(49): RegistrationController->actionRegistration()
+#11 Z:\home\site.loc\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 Z:\home\site.loc\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 Z:\home\site.loc\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 Z:\home\site.loc\yii\web\CWebApplication.php(282): CController->run('')
+#15 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('user/registrati...')
+#16 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#17 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/user/registration
+---
+2013/05/29 16:12:08 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in Z:\home\site.loc\public_html\protected\modules\user\controllers\RegistrationController.php (30)
+in Z:\home\site.loc\public_html\index.php (13)
+2013/05/29 16:12:09 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in Z:\home\site.loc\public_html\protected\modules\user\controllers\RegistrationController.php (30)
+in Z:\home\site.loc\public_html\index.php (13)

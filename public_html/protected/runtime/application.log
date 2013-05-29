@@ -14,3 +14,127 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2013/05/29 15:33:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection.connectionString cannot be empty.' in Z:\home\site.loc\yii\db\CDbConnection.php:369
+Stack trace:
+#0 Z:\home\site.loc\yii\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\site.loc\yii\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 Z:\home\site.loc\yii\base\CModule.php(387): CDbConnection->init()
+#3 Z:\home\site.loc\yii\base\CModule.php(103): CModule->getComponent('db')
+#4 Z:\home\site.loc\yii\gii\generators\crud\CrudCode.php(44): CModule->__get('db')
+#5 Z:\home\site.loc\yii\web\CFormModel.php(39): CrudCode->init()
+#6 Z:\home\site.loc\yii\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 Z:\home\site.loc\yii\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 Z:\home\site.loc\yii\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 Z:\home\site.loc\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 Z:\home\site.loc\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 Z:\home\site.loc\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\site.loc\yii\web\CWebApplication.php(282): CController->run('')
+#13 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('gii/bootstrap')
+#14 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#15 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php/gii/bootstrap
+HTTP_REFERER=http://www.site.loc/index.php/gii/default/index
+---
+2013/05/29 15:38:06 [error] [exception.CException] exception 'CException' with message 'Контроллер SiteController не может найти представление "//site/_error".' in Z:\home\site.loc\yii\web\CController.php:878
+Stack trace:
+#0 Z:\home\site.loc\public_html\protected\views\layouts\main.php(136): CController->renderPartial('//site/_error')
+#1 Z:\home\site.loc\yii\web\CBaseController.php(126): require('Z:\home\site.lo...')
+#2 Z:\home\site.loc\yii\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\site.lo...', Array, true)
+#3 Z:\home\site.loc\yii\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('Z:\home\site.lo...', Array, true)
+#4 Z:\home\site.loc\yii\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 Z:\home\site.loc\yii\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 Z:\home\site.loc\yii\web\CBaseController.php(206): COutputProcessor->run()
+#7 Z:\home\site.loc\yii\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 Z:\home\site.loc\public_html\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#9 Z:\home\site.loc\yii\web\CBaseController.php(126): require('Z:\home\site.lo...')
+#10 Z:\home\site.loc\yii\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\site.lo...', Array, true)
+#11 Z:\home\site.loc\yii\web\CController.php(784): CBaseController->renderFile('Z:\home\site.lo...', Array, true)
+#12 Z:\home\site.loc\public_html\protected\controllers\SiteController.php(32): CController->render('index')
+#13 Z:\home\site.loc\yii\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#14 Z:\home\site.loc\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 Z:\home\site.loc\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 Z:\home\site.loc\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 Z:\home\site.loc\yii\web\CWebApplication.php(282): CController->run('index')
+#18 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#19 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#20 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/site/index
+---
+2013/05/29 15:39:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "user/logout".' in Z:\home\site.loc\yii\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('user/logout')
+#1 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/logout
+---
+2013/05/29 15:39:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "logout".' in Z:\home\site.loc\yii\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('logout')
+#1 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/logout
+---
+2013/05/29 15:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "admin".' in Z:\home\site.loc\yii\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#1 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin
+---
+2013/05/29 15:40:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "admin".' in Z:\home\site.loc\yii\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#1 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin
+---
+2013/05/29 15:40:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "admin".' in Z:\home\site.loc\yii\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#1 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin
+---
+2013/05/29 15:43:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "about".' in Z:\home\site.loc\yii\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('about')
+#1 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/about
+---
+2013/05/29 15:43:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "about".' in Z:\home\site.loc\yii\web\CController.php:483
+Stack trace:
+#0 Z:\home\site.loc\yii\web\CController.php(270): CController->missingAction('about')
+#1 Z:\home\site.loc\yii\web\CWebApplication.php(282): CController->run('about')
+#2 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#4 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/about
+---
+2013/05/29 15:47:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "about".' in Z:\home\site.loc\yii\web\CController.php:483
+Stack trace:
+#0 Z:\home\site.loc\yii\web\CController.php(270): CController->missingAction('about')
+#1 Z:\home\site.loc\yii\web\CWebApplication.php(282): CController->run('about')
+#2 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#4 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/about
+---
+2013/05/29 15:47:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "login".' in Z:\home\site.loc\yii\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('login')
+#1 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/login
+---

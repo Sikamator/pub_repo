@@ -1,0 +1,75 @@
+.close_button {
+    position: relative;
+    top: 10px;
+    left: -8px;
+    height: 23px;
+    width: 23px;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 20px;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+}
+.close_button .one{
+    top: 4px;
+    left: 10px;
+    position: absolute;
+    height: 15px;
+    width: 3px;
+    background-color: #ffffff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    filter: progid:DXImageTransform.Microsoft.Matrix(M11='0.707', M12='0.707', M21='-0.707', M22='0.707', SizingMethod="auto expand");
+}
+
+.close_button .two{
+    top: 4px;
+    left: 10px;
+    position: absolute;
+    height: 15px;
+    width: 3px;
+    background-color: #ffffff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    filter: progid:DXImageTransform.Microsoft.Matrix(M11='0.707', M12='0.707', M21='-0.707', M22='0.707', SizingMethod="auto expand");
+    progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.thumbnails .loader{
+    position: relative;
+    top: 10px;
+    left: -8px;
+    display:none;
+    height: 23px;
+    width: 23px;
+    border:2px solid #fff;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 20px;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+}
+
+.comment{
+    list-style: none;
+    padding: 10px;
+}
+
+.comment-head{
+    float: left;
+    width:100%;
+}
+
+.padfix{
+    margin-top: 50px;
+}
+
+.bold{
+    font-weight: bolder;
+}

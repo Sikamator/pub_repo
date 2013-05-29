@@ -1,15 +1,13 @@
-<?php
-/* @var $this SiteController */
-/* @var $error array */
-
-$this->pageTitle=Yii::app()->name . ' - Error';
-$this->breadcrumbs=array(
-	'Error',
-);
-?>
-
-<h2>Error <?php echo $code; ?></h2>
+<center>
+<h1><?php echo $code; ?></h1>
 
 <div class="error">
-<?php echo CHtml::encode($message); ?>
+<?php
+	switch ($code){
+		case '404':
+		echo "<p>А такой страницы нет</p>";
+		break;
+	}
+	?>
 </div>
+</center>
