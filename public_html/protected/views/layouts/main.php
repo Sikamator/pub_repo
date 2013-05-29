@@ -52,11 +52,16 @@
                         'label' => 'Права',
                         'url' => array('/rights'),
                         'visible' => Yii::app()->user->checkAccess('rights'),
-
                     ),
                     array(
                         'label' => 'Вход',
                         'url' => array('/user/login'),
+                        'visible' => Yii::app()->user->isGuest,
+                        'htmlOptions' => array('id' => "top_login_button")
+                    ),
+                    array(
+                        'label' => 'Регистрация',
+                        'url' => array('/user/registration'),
                         'visible' => Yii::app()->user->isGuest,
                         'htmlOptions' => array('id' => "top_login_button")
                     ),
