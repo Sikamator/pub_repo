@@ -237,3 +237,19 @@ Stack trace:
 #24 {main}
 REQUEST_URI=/user
 ---
+2013/06/01 03:09:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in Z:\home\site.loc\yii\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/03 18:37:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in Z:\home\site.loc\yii\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
