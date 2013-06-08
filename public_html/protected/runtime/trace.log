@@ -253,3 +253,148 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2013/06/07 11:09:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in Z:\home\site.loc\yii\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/07 11:09:55 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in Z:\home\site.loc\public_html\protected\modules\user\controllers\RegistrationController.php (30)
+in Z:\home\site.loc\public_html\index.php (13)
+2013/06/07 11:09:58 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in Z:\home\site.loc\public_html\protected\modules\user\controllers\RegistrationController.php (30)
+in Z:\home\site.loc\public_html\index.php (13)
+2013/06/07 11:10:15 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in Z:\home\site.loc\public_html\protected\modules\user\controllers\RegistrationController.php (30)
+in Z:\home\site.loc\public_html\index.php (13)
+2013/06/07 11:10:20 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in Z:\home\site.loc\public_html\protected\modules\user\controllers\RegistrationController.php (30)
+in Z:\home\site.loc\public_html\index.php (13)
+2013/06/07 11:10:21 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in Z:\home\site.loc\public_html\protected\modules\user\controllers\RegistrationController.php (30)
+in Z:\home\site.loc\public_html\index.php (13)
+2013/06/07 12:42:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/9221a814/js/form.js".' in Z:\home\site.loc\yii\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/9221a814...')
+#1 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/9221a814/js/form.js
+HTTP_REFERER=http://www.site.loc/user/profileField/update/id/2
+---
+2013/06/07 18:10:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in Z:\home\site.loc\yii\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/07 18:10:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in Z:\home\site.loc\yii\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/06/08 14:20:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "admin".' in Z:\home\site.loc\yii\web\CController.php:483
+Stack trace:
+#0 Z:\home\site.loc\yii\web\CController.php(270): CController->missingAction('admin')
+#1 Z:\home\site.loc\yii\web\CWebApplication.php(282): CController->run('admin')
+#2 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('admin/post/admi...')
+#3 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#4 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/post/admin
+HTTP_REFERER=http://www.site.loc/admin/post/create
+---
+2013/06/08 15:09:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "view".' in Z:\home\site.loc\yii\web\CController.php:483
+Stack trace:
+#0 Z:\home\site.loc\yii\web\CController.php(270): CController->missingAction('view')
+#1 Z:\home\site.loc\yii\web\CWebApplication.php(282): CController->run('view')
+#2 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('admin/post/view...')
+#3 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#4 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/post/view/id/1
+HTTP_REFERER=http://www.site.loc/admin/post/index
+---
+2013/06/08 15:11:08 [error] [exception.CException] exception 'CException' with message 'В классе TbActiveForm и его поведениях не найден метод или замыкание с именем "dropDownRow".' in Z:\home\site.loc\yii\base\CComponent.php:265
+Stack trace:
+#0 Z:\home\site.loc\public_html\protected\modules\admin\views\post\_form.php(16): CComponent->__call('dropDownRow', Array)
+#1 Z:\home\site.loc\public_html\protected\modules\admin\views\post\_form.php(16): TbActiveForm->dropDownRow(Object(Post), 'status', Array)
+#2 Z:\home\site.loc\yii\web\CBaseController.php(126): require('Z:\home\site.lo...')
+#3 Z:\home\site.loc\public_html\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(43): CBaseController->renderInternal('Z:\home\site.lo...', Array, true)
+#4 Z:\home\site.loc\yii\web\CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(PostController), 'Z:\home\site.lo...', Array, true)
+#5 Z:\home\site.loc\yii\web\CController.php(869): CBaseController->renderFile('Z:\home\site.lo...', Array, true)
+#6 Z:\home\site.loc\public_html\protected\modules\admin\views\post\update.php(12): CController->renderPartial('_form', Array)
+#7 Z:\home\site.loc\yii\web\CBaseController.php(126): require('Z:\home\site.lo...')
+#8 Z:\home\site.loc\public_html\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(43): CBaseController->renderInternal('Z:\home\site.lo...', Array, true)
+#9 Z:\home\site.loc\yii\web\CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(PostController), 'Z:\home\site.lo...', Array, true)
+#10 Z:\home\site.loc\yii\web\CController.php(869): CBaseController->renderFile('Z:\home\site.lo...', Array, true)
+#11 Z:\home\site.loc\yii\web\CController.php(782): CController->renderPartial('update', Array, true)
+#12 Z:\home\site.loc\public_html\protected\modules\admin\controllers\PostController.php(91): CController->render('update', Array)
+#13 [internal function]: PostController->actionUpdate('1')
+#14 Z:\home\site.loc\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#15 Z:\home\site.loc\yii\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#16 Z:\home\site.loc\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 Z:\home\site.loc\yii\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 Z:\home\site.loc\yii\web\filters\CFilter.php(40): CFilterChain->run()
+#19 Z:\home\site.loc\yii\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 Z:\home\site.loc\yii\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 Z:\home\site.loc\yii\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 Z:\home\site.loc\yii\web\CController.php(291): CFilterChain->run()
+#23 Z:\home\site.loc\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 Z:\home\site.loc\yii\web\CWebApplication.php(282): CController->run('update')
+#25 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('admin/post/upda...')
+#26 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#27 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/admin/post/update/id/1
+---
+2013/06/08 15:11:19 [error] [exception.CException] exception 'CException' with message 'В классе TbActiveForm и его поведениях не найден метод или замыкание с именем "dropDownMenu".' in Z:\home\site.loc\yii\base\CComponent.php:265
+Stack trace:
+#0 Z:\home\site.loc\public_html\protected\modules\admin\views\post\_form.php(16): CComponent->__call('dropDownMenu', Array)
+#1 Z:\home\site.loc\public_html\protected\modules\admin\views\post\_form.php(16): TbActiveForm->dropDownMenu(Object(Post), 'status', Array)
+#2 Z:\home\site.loc\yii\web\CBaseController.php(126): require('Z:\home\site.lo...')
+#3 Z:\home\site.loc\public_html\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(43): CBaseController->renderInternal('Z:\home\site.lo...', Array, true)
+#4 Z:\home\site.loc\yii\web\CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(PostController), 'Z:\home\site.lo...', Array, true)
+#5 Z:\home\site.loc\yii\web\CController.php(869): CBaseController->renderFile('Z:\home\site.lo...', Array, true)
+#6 Z:\home\site.loc\public_html\protected\modules\admin\views\post\update.php(12): CController->renderPartial('_form', Array)
+#7 Z:\home\site.loc\yii\web\CBaseController.php(126): require('Z:\home\site.lo...')
+#8 Z:\home\site.loc\public_html\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(43): CBaseController->renderInternal('Z:\home\site.lo...', Array, true)
+#9 Z:\home\site.loc\yii\web\CBaseController.php(93): YiiDebugViewRenderer->renderFile(Object(PostController), 'Z:\home\site.lo...', Array, true)
+#10 Z:\home\site.loc\yii\web\CController.php(869): CBaseController->renderFile('Z:\home\site.lo...', Array, true)
+#11 Z:\home\site.loc\yii\web\CController.php(782): CController->renderPartial('update', Array, true)
+#12 Z:\home\site.loc\public_html\protected\modules\admin\controllers\PostController.php(91): CController->render('update', Array)
+#13 [internal function]: PostController->actionUpdate('1')
+#14 Z:\home\site.loc\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#15 Z:\home\site.loc\yii\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#16 Z:\home\site.loc\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 Z:\home\site.loc\yii\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 Z:\home\site.loc\yii\web\filters\CFilter.php(40): CFilterChain->run()
+#19 Z:\home\site.loc\yii\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 Z:\home\site.loc\yii\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 Z:\home\site.loc\yii\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 Z:\home\site.loc\yii\web\CController.php(291): CFilterChain->run()
+#23 Z:\home\site.loc\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 Z:\home\site.loc\yii\web\CWebApplication.php(282): CController->run('update')
+#25 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('admin/post/upda...')
+#26 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#27 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/admin/post/update/id/1
+---
+2013/06/08 15:53:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/9221a814/js/form.js".' in Z:\home\site.loc\yii\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\site.loc\yii\web\CWebApplication.php(141): CWebApplication->runController('assets/9221a814...')
+#1 Z:\home\site.loc\yii\base\CApplication.php(169): CWebApplication->processRequest()
+#2 Z:\home\site.loc\public_html\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/9221a814/js/form.js
+HTTP_REFERER=http://www.site.loc/user/profileField/update/id/2
+---

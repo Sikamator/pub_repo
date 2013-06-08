@@ -60,9 +60,9 @@
                         'htmlOptions' => array('id' => "top_login_button")
                     ),
                     array(
-                        'label' => 'Регистрация',
-                        'url' => array('/user/registration'),
-                        'visible' => Yii::app()->user->isGuest,
+                        'label' => 'Статьи',
+                        'url' => array('/admin/index'),
+                        'visible' => Yii::app()->user->checkAccess('rights'),
                         'htmlOptions' => array('id' => "top_login_button")
                     ),
                     array(
